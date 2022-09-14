@@ -12,11 +12,11 @@ fn main() {
     let mut totalweight = 0.0;
     while i < _numberassignments{
         println!("What is your grade for this assignment? ({})", i+1);
-        let mut grade = String::new();
+        let mut grade = String::new(); //Grabs current grade
         io::stdin()
         .read_line(&mut grade)
         .expect("Failed to read line");
-        let grade: f32 = grade.trim().parse().expect("Please input a number");
+        let grade: f32 = grade.trim().parse().expect("Please input a number"); //Reads line and converts string to float
         println!("What is the weight for this assignment ({})", i+1);
         let mut weight = String::new();
         io::stdin()
